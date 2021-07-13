@@ -1,0 +1,13 @@
+Array
+(
+    [deviceid] => 3133013871
+    [protocol] => calamp
+    [attributes] => {\"sat\":0,\"carrier\":20,\"rssi\":-115,\"modem\":15,\"hdop\":0,\"input\":4,\"ignition\":false,\"status\":8,\"event\":1,\"append\":0,\"acc0\":1898,\"acc1\":437,\"acc2\":0,\"distance\":0.0,\"totalDistance\":3.6704658285E8,\"motion\":false}
+    [fixtime] => 1616469517000
+    [longitude] => -100.8594061
+    [latitude] => 22.0508565
+    [altitude] => 0.0
+    [speed] => 0.0
+    [course] => 0.0
+    [valid] => true
+)

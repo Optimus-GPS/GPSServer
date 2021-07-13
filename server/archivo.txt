@@ -1,0 +1,50 @@
+Array
+(
+    [deviceid] => 3133020664
+    [protocol] => calamp
+    [attributes] => {\\\"sat\\\":0,\\\"carrier\\\":20,\\\"rssi\\\":-85,\\\"modem\\\":15,\\\"hdop\\\":0,\\\"input\\\":4,\\\"ignition\\\":false,\\\"status\\\":8,\\\"event\\\":1,\\\"append\\\":0,\\\"acc0\\\":3367,\\\"acc1\\\":250,\\\"acc2\\\":0,\\\"distance\\\":0.0,\\\"totalDistance\\\":2.210094729E7,\\\"motion\\\":false}
+    [fixtime] => 1600447818000
+    [longitude] => 0.0
+    [latitude] => 0.0
+    [altitude] => 1600447818000
+    [speed] => 0.0
+    [course] => 0.0
+    [valid] => true
+)
+Array
+(
+    [imei] => 3133020664
+    [protocol] => calamp
+    [dt_server] => 2020-09-18 16:50:27
+    [dt_tracker] => 2020-09-18 16:50:18
+    [lat] => 0
+    [lng] => 0
+    [altitude] => 1600447818000
+    [angle] => 0
+    [speed] => 0
+    [loc_valid] => 1
+    [params] => Array
+        (
+            [sat] => 0
+            [carrier] => 20
+            [rssi] => -85
+            [modem] => 15
+            [hdop] => 0
+            [input] => 4
+            [ignition] => 
+            [status] => 8
+            [event] => 1
+            [append] => 0
+            [acc0] => 3367
+            [acc1] => 250
+            [acc2] => 0
+            [distance] => 0
+            [totalDistance] => 22100947.29
+            [motion] => 
+        )
+
+    [event] => 
+    [net_protocol] => 
+    [ip] => 
+    [port] => 
+)

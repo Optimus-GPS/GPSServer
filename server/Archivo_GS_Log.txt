@@ -1,0 +1,33 @@
+Array
+(
+    [imei] => 864802030376317
+    [protocol] => gl200
+    [dt_server] => 2021-03-24 01:11:17
+    [dt_tracker] => 2021-03-24 01:11:03
+    [lat] => 25.663588
+    [lng] => -100.284491
+    [altitude] => 1616548263000
+    [angle] => 85
+    [speed] => 0
+    [loc_valid] => 1
+    [params] => Array
+        (
+            [hdop] => 1
+            [power] => 12.733
+            [odometer] => 0
+            [batteryLevel] => 89
+            [ignition] => 
+            [input] => 0
+            [output] => 0
+            [type] => FRI
+            [distance] => 0
+            [totalDistance] => 3700263.74
+            [motion] => 
+            [hours] => 490880000
+        )
+
+    [event] => 
+    [net_protocol] => 
+    [ip] => 
+    [port] => 
+)

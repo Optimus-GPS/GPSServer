@@ -1,0 +1,5 @@
+<Files ~ "\.log$">
+Options -Indexes
+Deny from all
+
+</Files>
