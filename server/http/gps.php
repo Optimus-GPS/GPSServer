@@ -68,11 +68,14 @@ $loc['port'] = '';
 
 $loc['positionid'] = $_GET['positionid'];
 
-$var22 = "http://95.111.244.100/server/http/gps2.php?" . "deviceid=" . $loc["imei"] ."&protocol=".$_GET["protocol"]."&attributes=".$_GET["attributes"]."&fixtime=".$_GET["fixtime"]."&longitude=".$_GET["longitude"]."&latitude=".$_GET["latitude"]."&altitude=".$_GET["fixtime"]."&speed=".$_GET["speed"]."&course=".$_GET["course"]."&valid=".$_GET["valid"];
+$var22 = "http://95.111.244.100/server/http/gps2.php?" . "deviceid=" . $_GET["deviceid"] ."&protocol=".$_GET["protocol"]."&attributes=".$_GET["attributes"]."&fixtime=".$_GET["fixtime"]."&longitude=".$_GET["longitude"]."&latitude=".$_GET["latitude"]."&altitude=".$_GET["fixtime"]."&speed=".$_GET["speed"]."&course=".$_GET["course"]."&valid=".$_GET["valid"];
+
+// $var22 = "http://optimusrastreogps.net/server/http/gps2.php?" . "deviceid=" . $_GET["deviceid"] ."&protocol=".$_GET["protocol"]."&attributes=".$_GET["attributes"]."&fixtime=".$_GET["fixtime"]."&longitude=".$_GET["longitude"]."&latitude=".$_GET["latitude"]."&altitude=".$_GET["fixtime"]."&speed=".$_GET["speed"]."&course=".$_GET["course"]."&valid=".$_GET["valid"]
+
 // $file = fopen("archivo1.txt", "w");
-fwrite($file, print_r($var22, true));
-fwrite($file, print_r($loc2, true));
-fclose($file);
+// fwrite($file, print_r($var22, true));
+// fwrite($file, print_r($loc2, true));
+// fclose($file);
 
 if (($loc['lat'] == 0) || ($loc['lng'] == 0)) {
 	$valid = 0;
@@ -91,7 +94,7 @@ else if (@$loc['loc_valid'] == 0)
 }
 
 $ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, "http://optimusrastreogps.net/server/http/gps2.php?" . "deviceid=" . $_GET["deviceid"] ."&protocol=".$_GET["protocol"]."&attributes=".$_GET["attributes"]."&fixtime=".$_GET["fixtime"]."&longitude=".$_GET["longitude"]."&latitude=".$_GET["latitude"]."&altitude=".$_GET["fixtime"]."&speed=".$_GET["speed"]."&course=".$_GET["course"]."&valid=".$_GET["valid"]);
+curl_setopt($ch, CURLOPT_URL, $var22);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 $output = curl_exec($ch);
 curl_close($ch);
