@@ -69,7 +69,7 @@ $loc['port'] = '';
 
 // $var22 = "http://95.111.244.100/server/http/gps2.php?" . "deviceid=" . $loc["imei"] ."&protocol=".$_GET["protocol"]."&attributes="$_GET["attributes"]."&fixtime="$_GET["fixtime"]."&longitude="$_GET["longitude"]."&latitude="$_GET["latitude"]."&altitude="$_GET["fixtime"]."&speed="$_GET["speed"]."&course="$_GET["course"]."&valid="$_GET["valid"];
 // $file = fopen("archivo1.txt", "w");
-		// fwrite($file, print_r($var22, true));
+		// // fwrite($file, print_r($var22, true));
 		// // fwrite($file, print_r($loc2, true));
 		// fclose($file);
 
