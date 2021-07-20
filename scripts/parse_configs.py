@@ -1,7 +1,7 @@
 import os
 
 
-FILES = ['/var/www/html/config.php']
+FILES = ['/var/www/html/config.php', '/var/www/html/config.custom.php']
 
 
 def parse_templates(tmpl_lines, file_result):

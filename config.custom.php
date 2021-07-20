@@ -105,19 +105,16 @@ $gsValues['BILLING_RECOVER_PLAN'] = 'true';
 $gsValues['BILLING_PAYPAL_ACCOUNT'] = '';
 $gsValues['BILLING_PAYPAL_CUSTOM'] = '';
 $gsValues['BILLING_CUSTOM_URL'] = 'https://cedis.connectfdi.com/login';
-$gsValues['EMAIL'] = 'cei-optimus@optimusenlinea.org';
-$gsValues['EMAIL_NO_REPLY'] = '';
-$gsValues['EMAIL_SIGNATURE'] = '--
-Atte. 
-OptimusGPS
-Su empresa de rastreo.';
-$gsValues['EMAIL_SMTP'] = 'true';
-$gsValues['EMAIL_SMTP_HOST'] = 'mail.bravehost.com';
-$gsValues['EMAIL_SMTP_PORT'] = 'mail';
-$gsValues['EMAIL_SMTP_AUTH'] = 'true';
-$gsValues['EMAIL_SMTP_SECURE'] = 'tls';
-$gsValues['EMAIL_SMTP_USERNAME'] = 'cei-optimus@optimusenlinea.org';
-$gsValues['EMAIL_SMTP_PASSWORD'] = '1234567*';
+$gsValues['EMAIL'] = '${EMAIL}';
+$gsValues['EMAIL_NO_REPLY'] = '${EMAIL_NO_REPLY}';
+$gsValues['EMAIL_SIGNATURE'] = '${EMAIL_SIGNATURE}';
+$gsValues['EMAIL_SMTP'] = '${EMAIL_SMTP}';
+$gsValues['EMAIL_SMTP_HOST'] = '${EMAIL_SMTP_HOST}';
+$gsValues['EMAIL_SMTP_PORT'] = '${EMAIL_SMTP_PORT}';
+$gsValues['EMAIL_SMTP_AUTH'] = '${EMAIL_SMTP_AUTH}';
+$gsValues['EMAIL_SMTP_SECURE'] = '${EMAIL_SMTP_SECURE}';
+$gsValues['EMAIL_SMTP_USERNAME'] = '${EMAIL_SMTP_USERNAME}';
+$gsValues['EMAIL_SMTP_PASSWORD'] = '${EMAIL_SMTP_PASSWORD}';
 $gsValues['SMS_GATEWAY'] = 'true';
 $gsValues['SMS_GATEWAY_TYPE'] = 'app';
 $gsValues['SMS_GATEWAY_NUMBER_FILTER'] = '';
