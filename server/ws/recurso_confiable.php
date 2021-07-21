@@ -41,7 +41,7 @@ function castDateSQL_T_RC($date){
 
 function envioRecursoConfiable($loc,$user,$pass,$id,$name,$placa){
 	
-	$file = fopen("log_RCONFIABLE.txt", "w");
+	$file = fopen("log_RCONFIABLE1.txt", "a");
 	
 	$wsdl = 'http://gps.rcontrol.com.mx/Tracking/wcf/RCService.svc?wsdl';
 	// $user = 'user_avl_cimexpress';
@@ -108,8 +108,17 @@ function envioRecursoConfiable($loc,$user,$pass,$id,$name,$placa){
 
 
 		$response = $soap->GPSAssetTracking(array('token' => $token, 'events' => $events));
+		fwrite($file, print_r("\n User: ",true));
+		fwrite($file, print_r($user,true));
+		fwrite($file, print_r("\n Pass: ",true));
+		fwrite($file, print_r($pass,true));
+		fwrite($file, print_r("\n Token: ",true));
+		fwrite($file, print_r($token,true));
+		fwrite($file, print_r("\n ARRAY Loc \n ",true));
 		fwrite($file, print_r($loc,true));
+		fwrite($file, print_r("\n ARRAY Events \n",true));
 		fwrite($file, print_r($events,true));
+		fwrite($file, print_r("\n Response \n",true));
 		fwrite($file, print_r(json_encode($response),true));
 
 	 // echo json_encode($response);

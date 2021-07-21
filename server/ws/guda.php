@@ -11,7 +11,7 @@ function castDateSQL_UNIX_Guda($date){
 
 function envioGuda1($loc,$user,$pass,$placa){
 	
-	$file = fopen("log_Guda.txt", "a");
+	$file = fopen("log_Guda1.txt", "a");
 	fwrite($file, print_r($loc,true));
 	
 	$wsdl = 'http://54.190.237.12/ws/API?wsdl';

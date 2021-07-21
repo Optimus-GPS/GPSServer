@@ -89,11 +89,11 @@ else if (@$loc['loc_valid'] == 0)
 	insert_db_noloc($loc);
 }
 
-$ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, "http://95.111.244.100/server/http/gps2.php?" . "deviceid=" . $_GET["deviceid"] ."&protocol=".$_GET["protocol"]."&attributes=".$_GET["attributes"]."&fixtime=".$_GET["fixtime"]."&longitude=".$_GET["longitude"]."&latitude=".$_GET["latitude"]."&altitude=".$_GET["fixtime"]."&speed=".$_GET["speed"]."&course=".$_GET["course"]."&valid=".$_GET["valid"]);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-$output = curl_exec($ch);
-curl_close($ch);
+//$ch = curl_init();
+//curl_setopt($ch, CURLOPT_URL, "http://95.111.244.100/server/http/gps2.php?" . "deviceid=" . $_GET["deviceid"] ."&protocol=".$_GET["protocol"]."&attributes=".$_GET["attributes"]."&fixtime=".$_GET["fixtime"]."&longitude=".$_GET["longitude"]."&latitude=".$_GET["latitude"]."&altitude=".$_GET["fixtime"]."&speed=".$_GET["speed"]."&course=".$_GET["course"]."&valid=".$_GET["valid"]);
+//curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+//$output = curl_exec($ch);
+//curl_close($ch);
 
 
 mysqli_close($ms);

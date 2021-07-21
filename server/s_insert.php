@@ -24,6 +24,7 @@
 	include ('ws/recurso_confiable.php');
 	include ('ws/guda.php');
 	include ('ws/sukarne.php');
+	include ('ws/wsPanelRey.php');
 	function insert_db_loc($loc)
 	{
 		global $ms;
@@ -200,13 +201,13 @@
 		}
 		
 		//********************* COMIENZA AREA PARA WS **********************
-		/*
+		
 		$consulta = "SELECT gs_object_custom_fields.*, gs_objects.name as economico,gs_objects.plate_number FROM gs_object_custom_fields join gs_objects on gs_object_custom_fields.imei = gs_objects.imei where gs_object_custom_fields.imei ='".$loc['imei']."' and data_list = 'true'";
 
 		
 		if ($resultado = mysqli_query($ms, $consulta)) {
 
-			/* obtener array asociativo 
+			/* obtener array asociativo */
 			while ($row = mysqli_fetch_assoc($resultado)) {
 				$result = json_encode($row);
 				$loc_ws= json_decode($result,true);
@@ -220,13 +221,13 @@
 					$imei = $loc['imei'];
 					
 					$file = fopen("log_ws.txt", "a");
-					fwrite($file, print_r("WS: ",true));
-					fwrite($file, print_r($ws_name,true));
-					fwrite($file, print_r(" User: ",true));
-					fwrite($file, print_r($ws_credentials[0],true));
-					fwrite($file, print_r(" Contraseña: ",true));					
-					fwrite($file, print_r($ws_credentials[1],true));
-					fwrite($file, print_r("\n",true));
+					// fwrite($file, print_r("WS: ",true));
+					// fwrite($file, print_r($ws_name,true));
+					// fwrite($file, print_r(" User: ",true));
+					// fwrite($file, print_r($ws_credentials[0],true));
+					// fwrite($file, print_r(" Contraseña: ",true));					
+					// fwrite($file, print_r($ws_credentials[1],true));
+					// fwrite($file, print_r("\n",true));
 					// $filefor = fopen("log_foreach.txt", "w");
 					
 					
@@ -264,6 +265,9 @@
 							fwrite($file, print_r("Respuesta: ".$resp,true));
 							$ws_id = 5;
 							break;
+						case "PANELREY":
+							envioPanelRey($loc,$loc_ws['economico'],$loc_ws['plate_number']);
+							break;
 					}		
 
 					fclose($file);
@@ -271,7 +275,7 @@
 				}
 			}
 
-			/* liberar el conjunto de resultados 
+			/* liberar el conjunto de resultados */
 			mysqli_free_result($resultado);
 		}
 
