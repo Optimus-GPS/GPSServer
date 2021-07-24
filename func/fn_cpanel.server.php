@@ -990,7 +990,7 @@
 		closedir($dh);
 		
 		// Agregamos el log de traccar a la lista
-		$dir = 'C:\Program Files\Traccar\logs';
+		///$dir = 'C:\Program Files\Traccar\logs';
 		$dh = opendir($dir);
 		
 		while (($file = readdir($dh)) !== false)
