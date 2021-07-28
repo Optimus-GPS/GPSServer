@@ -169,7 +169,7 @@ if ($loc['protocol']== "calamp"){
 	}
 }
 
-mysqli_close($ms);
+//mysqli_close($ms);
 die;
 
 ?>

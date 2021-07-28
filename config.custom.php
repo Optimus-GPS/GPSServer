@@ -1,11 +1,11 @@
 <?
-$gsValues['SERVER_API_KEY'] = '081C3738ADF45DE566E187DB32B1796A';
+$gsValues['SERVER_API_KEY'] = '0000';
 $gsValues['SERVER_API_IP'] = '';
-$gsValues['URL_LOGIN'] = 'http://optimusrastreogps.net';
+$gsValues['URL_LOGIN'] = 'http://localhost';
 $gsValues['URL_HELP'] = 'https://optimusgpstiendaenlinea.com/';
 $gsValues['URL_CONTACT'] = 'https://optimusgps.com.mx/';
 $gsValues['URL_SHOP'] = 'https://cedis.connectfdi.com/login';
-$gsValues['URL_SMS_GATEWAY_APP'] = 'http://www.gps-server.net/sms-gateway-android';
+$gsValues['URL_SMS_GATEWAY_APP'] = 'http://localhost';
 $gsValues['CONNECTION_TIMEOUT'] = '5';
 $gsValues['HISTORY_PERIOD'] = '120';
 $gsValues['DB_BACKUP_TIME'] = '00:00';
@@ -107,10 +107,7 @@ $gsValues['BILLING_PAYPAL_CUSTOM'] = '';
 $gsValues['BILLING_CUSTOM_URL'] = 'https://cedis.connectfdi.com/login';
 $gsValues['EMAIL'] = 'cei-optimus@optimusenlinea.org';
 $gsValues['EMAIL_NO_REPLY'] = '';
-$gsValues['EMAIL_SIGNATURE'] = '--
-Atte. 
-OptimusGPS
-Su empresa de rastreo.';
+$gsValues['EMAIL_SIGNATURE'] = 'Atte.\nOptimusGPS\nSu empresa de rastreo.';
 $gsValues['EMAIL_SMTP'] = 'true';
 $gsValues['EMAIL_SMTP_HOST'] = 'mail.bravehost.com';
 $gsValues['EMAIL_SMTP_PORT'] = 'mail';

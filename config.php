@@ -30,15 +30,15 @@
         // very often web servers have no $_SERVER['DOCUMENT_ROOT'] set at all, then direct path should be used, for example c:/wamp/www or any other leading to www or public_html folder
         $gsValues['PATH_ROOT'] = $_SERVER['DOCUMENT_ROOT'];
         // url to root of web application, example: $gsValues['URL_ROOT'] = 'YOUR_DOMAIN/track';
-        $gsValues['URL_ROOT'] = '${URL_ROOT}';
+        $gsValues['URL_ROOT'] = 'http://localhost/';
                 
         // hardware key, should be same as in GPS-Server.exe
-        $gsValues['HW_KEY'] = 'A165759A0394E56B5F2DFBB3F49BA707';
+        $gsValues['HW_KEY'] = '0000';
         
         // connection to MySQL database
-        $gsValues['DB_HOSTNAME'] = '${DATABASE_HOSTNAME}'; // database host
-        $gsValues['DB_PORT']     = '${DATABASE_PORT}'; // database port
-        $gsValues['DB_NAME']	 = '${DATABASE_NAME}'; // database name
-        $gsValues['DB_USERNAME'] = '${DATABASE_USER}'; // database user name
-        $gsValues['DB_PASSWORD'] = '${DATABASE_PASSWORD}'; // database password
+        $gsValues['DB_HOSTNAME'] = '35.163.63.113'; // database host
+        $gsValues['DB_PORT']     = '3306'; // database port
+        $gsValues['DB_NAME']	 = 'gpsdb'; // database name
+        $gsValues['DB_USERNAME'] = 'dbadmin'; // database user name
+        $gsValues['DB_PASSWORD'] = 'W6M$>6hB'; // database password
 ?>
