@@ -150,7 +150,7 @@ if (isset($gsValues['SERVER_ENABLED'])) {
             // 1 = verdadero
             $STATUS = 1;
             $CAMPOS = '';
-            $SQL = "SELECT * FROM mantenimiento WHERE id=1 and msg_status=".$STATUS;
+            $SQL = "SELECT * FROM mantenimiento WHERE msg_status=".$STATUS;
             $RESULTADO = CONSULTAR($SQL);
             $row = mysqli_fetch_assoc($RESULTADO);
         ?>
